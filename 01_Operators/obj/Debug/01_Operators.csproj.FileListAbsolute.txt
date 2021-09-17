@@ -1,0 +1,2 @@
+C:\ElevenFiftyProjects\SDFundamentals\01_Operators\obj\Debug\01_Operators.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\SDFundamentals\01_Operators\obj\Debug\01_Operators.csproj.CoreCompileInputs.cache

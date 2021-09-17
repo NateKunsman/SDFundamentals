@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\SDFundamentals\05_InheritanceClasses\bin\Debug\05_InheritanceClasses.dll
+C:\ElevenFiftyProjects\SDFundamentals\05_InheritanceClasses\bin\Debug\05_InheritanceClasses.pdb
+C:\ElevenFiftyProjects\SDFundamentals\05_InheritanceClasses\obj\Debug\05_InheritanceClasses.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\SDFundamentals\05_InheritanceClasses\obj\Debug\05_InheritanceClasses.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\SDFundamentals\05_InheritanceClasses\obj\Debug\05_InheritanceClasses.dll
+C:\ElevenFiftyProjects\SDFundamentals\05_InheritanceClasses\obj\Debug\05_InheritanceClasses.pdb

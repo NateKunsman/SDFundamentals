@@ -1,0 +1,14 @@
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\obj\Debug\00_TypesAndVariables.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\obj\Debug\00_TypesAndVariables.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\bin\Debug\00_TypesAndVariables.dll
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\bin\Debug\00_TypesAndVariables.pdb
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\obj\Debug\00_TypesAndVariables.csproj.CopyComplete
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\obj\Debug\00_TypesAndVariables.dll
+C:\ElevenFiftyProjects\SDFundamentals\00_TypesAndVariables\obj\Debug\00_TypesAndVariables.pdb

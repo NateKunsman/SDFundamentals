@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\SDFundamentals\ClassMethodsLibrary\bin\Debug\ClassMethodsLibrary.dll
+C:\ElevenFiftyProjects\SDFundamentals\ClassMethodsLibrary\bin\Debug\ClassMethodsLibrary.pdb
+C:\ElevenFiftyProjects\SDFundamentals\ClassMethodsLibrary\obj\Debug\ClassMethodsLibrary.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\SDFundamentals\ClassMethodsLibrary\obj\Debug\ClassMethodsLibrary.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\SDFundamentals\ClassMethodsLibrary\obj\Debug\ClassMethodsLibrary.dll
+C:\ElevenFiftyProjects\SDFundamentals\ClassMethodsLibrary\obj\Debug\ClassMethodsLibrary.pdb
