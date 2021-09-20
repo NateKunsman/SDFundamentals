@@ -9,11 +9,30 @@ namespace Random_Project
         [TestMethod]
         public void InfinityLoop_WritesHelloWorldToConsoleInfinitel()
         {
-            string str = "Hello World";
+            int age = 23;
 
-            for (int i = 0; i <= str.Length - 1; i++)
+            if (age <= 18)
+
             {
-                Console.WriteLine(str[i]);
+
+                Console.WriteLine($"You are: {age}.");
+
+            }
+
+            else if (age > 18 && age <= 35)
+
+            {
+
+                Console.WriteLine($"How are you? You are: {age}.");
+
+            }
+
+            else
+
+            {
+
+                Console.WriteLine("...");
+
             }
         }
     }
