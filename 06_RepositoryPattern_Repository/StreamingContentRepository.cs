@@ -29,5 +29,52 @@ namespace _06_RepositoryPattern_Repository
             bool wasAdded = (_contentDirectory.Count > startingCount) ? true : false;
             return wasAdded;
         }
+        
+        //Read (GET)
+        public List<StreamingContent> GetContents()
+        {
+            return _contentDirectory;
+        }
+
+        //Get By Title
+        public StreamingContent GetContentByTitle(string theTitleYouAreLookingFor)
+        {
+            foreach(StreamingContent content in _contentDirectory)
+            {
+                if (content.Title.ToLower() == theTitleYouAreLookingFor.ToLower())
+                {
+                    return content;
+                }
+
+            }
+                    return null;
+        }
+
+        //Update
+        public bool UpdateExistingContent(StreamingContent existingContent, StreamingContent newContent)
+        {
+            if (existingContent != null)
+            {
+                existingContent.Title = newContent.Title;
+                existingContent.Description = newContent.Description;
+                existingContent.RunTime = newContent.RunTime;
+                existingContent.ReviewRating = newContent.ReviewRating;
+                existingContent.RatingOfMaturity = newContent.RatingOfMaturity;
+                existingContent.Genre = newContent.Genre;
+                return true;
+            }
+            else 
+            {
+               return false;
+            }
+        }
+
+        //Delete
+        public bool DeleteContent(StreamingContent existingContent)
+        {
+            bool result = _contentDirectory.Remove(existingContent);
+            return result;
+        }
+
     }
 }

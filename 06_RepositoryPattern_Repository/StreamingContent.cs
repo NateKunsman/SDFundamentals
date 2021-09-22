@@ -12,7 +12,7 @@ namespace _06_RepositoryPattern_Repository
     {
         public StreamingContent() { }
 
-        public StreamingContent(string title, string description, double runTime, double reviewRating, string genre, MaturityRatingEnum ratingOfMaturity, bool isFamilyFriendly)
+        public StreamingContent(string title, string description, double runTime, double reviewRating, string genre, MaturityRatingEnum ratingOfMaturity)
         {
             Title = title;
             Description = description;
@@ -57,9 +57,15 @@ namespace _06_RepositoryPattern_Repository
                         return false;
                 }
 
-                if ((int)RatingOfMaturity <= 2)
-                { }
-                return true;
+                if ((int)RatingOfMaturity <= 5)
+                {
+                    return true;
+                }
+                else
+                {
+                    return true;
+                }
+                
             }
         }
     }
@@ -67,10 +73,13 @@ namespace _06_RepositoryPattern_Repository
         {
             G = 1,
             PG,
+            TV_Y,
+            TV_Y7,
             PG13,
             R,
             NC17,
-            NR
+            NR,
+            TV_MA
         }
     }
 

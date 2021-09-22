@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{105B0ED2-6D2A-4EB9-9274-EAA0D76D7908}</ProjectGuid>
+    <ProjectGuid>{09768B13-984D-4C19-B546-1BBBF4E52B23}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_06_RepositoryPattern_Tests</RootNamespace>
-    <AssemblyName>06_RepositoryPattern_Tests</AssemblyName>
+    <RootNamespace>CalculatorTest</RootNamespace>
+    <AssemblyName>CalculatorTest</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,17 +49,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StreamingContentTests_1.cs" />
+    <Compile Include="CalcTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StreamingContentTests_2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\06_RepositoryPattern_Repository\06_RepositoryPattern_Repository.csproj">
-      <Project>{C83C2D35-479F-40A3-90C4-DE2B9DA84553}</Project>
-      <Name>06_RepositoryPattern_Repository</Name>
+    <ProjectReference Include="..\MorningChallange_3_Calculator\MorningChallange_3_Calculator.csproj">
+      <Project>{BE1D0B9D-FD1F-4BE7-B641-B98AE699178A}</Project>
+      <Name>MorningChallange_3_Calculator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
