@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _06_RepositoryPattern_Repository
 {
     //POCO
-    //Plain Old CShorp Object
+    //Plain Old CSharp Object
     public class StreamingContent
     {
         public StreamingContent() { }
