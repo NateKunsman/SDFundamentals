@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Interfaces_Library", "09
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Interfaces_Tests", "09_Interfaces_Tests\09_Interfaces_Tests.csproj", "{22992787-49B0-41AD-BB47-3CE504D3F0D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_StreamingContent_Console_Tests", "07_StreamingContent_Console_Tests\07_StreamingContent_Console_Tests.csproj", "{A9A0CDF7-CC87-4CAB-BC65-5FE7A7A7B003}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{22992787-49B0-41AD-BB47-3CE504D3F0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22992787-49B0-41AD-BB47-3CE504D3F0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22992787-49B0-41AD-BB47-3CE504D3F0D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A0CDF7-CC87-4CAB-BC65-5FE7A7A7B003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A0CDF7-CC87-4CAB-BC65-5FE7A7A7B003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A0CDF7-CC87-4CAB-BC65-5FE7A7A7B003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A0CDF7-CC87-4CAB-BC65-5FE7A7A7B003}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
