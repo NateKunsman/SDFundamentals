@@ -45,8 +45,8 @@
     <Compile Include="FruitClasses.cs" />
     <Compile Include="ICurrency.cs" />
     <Compile Include="IFruit.cs" />
-    <Compile Include="Pear.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaction.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

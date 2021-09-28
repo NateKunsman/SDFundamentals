@@ -8,21 +8,9 @@ namespace _09_Interfaces_Library
 {
     public class Penny : ICurrency
     {
-        public string Name
-        {
-            get
-            {
-                return "Penny";
-            }
-        }
+        public string Name {get { return "Penny";} }
 
-        public decimal Value
-        {
-            get
-            {
-                return 0.01m;
-            }
-        }
+        public decimal Value {get{ return 0.01m;}}
     }
     public class Dime : ICurrency
     {
@@ -51,5 +39,12 @@ namespace _09_Interfaces_Library
 
         public string Name { get { return "Electronic Payment"; } }
         public decimal Value { get; }
+    }
+
+    public class Euro : ICurrency
+    {
+        public string Name { get { return "Euro"; } }
+
+        public decimal Value { get { return 1.17m; } }
     }
 }

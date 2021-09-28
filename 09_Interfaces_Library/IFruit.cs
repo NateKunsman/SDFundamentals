@@ -39,7 +39,7 @@ namespace _09_Interfaces_Library
         {
             IsPeeled = isPeeled;
         }
-        public string Name { get { return "Grapefruit"} }
+        public string Name { get { return "Grapefruit"; } }
 
         public bool IsPeeled { get; set; }
         public string Peel()

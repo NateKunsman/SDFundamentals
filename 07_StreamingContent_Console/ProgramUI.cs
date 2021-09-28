@@ -1,4 +1,5 @@
 ﻿using _06_RepositoryPattern_Repository;
+using _07_StreamingContent_Console.Consoles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,15 @@ using System.Threading.Tasks;
 
 namespace _07_StreamingContent_Console
 {
-    class ProgramUI
+    public class ProgramUI
     {
         private StreamingContentRepository _repo = new StreamingContentRepository();
+        private readonly IConsole _console;
+
+        public ProgramUI(IConsole console)
+        {
+            _console = console;
+        }
         public void Run()
         {
             SeedData();
@@ -24,9 +31,9 @@ namespace _07_StreamingContent_Console
             bool isRunning = true;
             while (isRunning)
             {
-                Console.Clear();
+                _console.Clear();
 
-                Console.WriteLine
+                _console.WriteLine
                     (
                     "Enter the number of your selection:\n" +
                     "1. Create new streaming content\n" +
@@ -37,7 +44,7 @@ namespace _07_StreamingContent_Console
                     "6. Exit"
                     );
 
-                string userInput = Console.ReadLine();
+                string userInput = _console.ReadLine();
 
                 switch (userInput)
                 {
@@ -64,10 +71,10 @@ namespace _07_StreamingContent_Console
                         //Exit
                         break;
                     default:
-                        Console.WriteLine("Enter a valid number between 1 and 6\n" +
+                        _console.WriteLine("Enter a valid number between 1 and 6\n" +
                             "Press any key to continue");
-                        Console.ReadLine();
-                        Console.ReadKey();
+                        _console.ReadLine();
+                        _console.ReadKey();
                         break;
 
                 }
@@ -76,28 +83,28 @@ namespace _07_StreamingContent_Console
             //Creating Content
             private void CreatNewContent()
             {
-                Console.Clear();
+                _console.Clear();
 
                 StreamingContent content = new StreamingContent();
 
             //Title
-            Console.WriteLine("Please enter a title");
-            content.Title = Console.ReadLine();
+            _console.WriteLine("Please enter a title");
+            content.Title = _console.ReadLine();
 
             //Description
-            Console.WriteLine("Please enter a description");
-            content.Description = Console.ReadLine();
+            _console.WriteLine("Please enter a description");
+            content.Description = _console.ReadLine();
 
             //Runtime
-            Console.WriteLine("Please enter a runtime of the content");
-            content.RunTime = Convert.ToDouble(Console.ReadLine());
+            _console.WriteLine("Please enter a runtime of the content");
+            content.RunTime = Convert.ToDouble(_console.ReadLine());
 
             //Review Rating
-            Console.WriteLine("What is the review score (0 - 10");
-            content.ReviewRating = double.Parse(Console.ReadLine());
+            _console.WriteLine("What is the review score (0 - 10");
+            content.ReviewRating = double.Parse(_console.ReadLine());
 
             //Maturity Rating
-            Console.WriteLine("Select a maturity rating:\n" +
+            _console.WriteLine("Select a maturity rating:\n" +
                 "1.G\n" +
                 "2.PG\n" +
                 "3.TV Y\n" +
@@ -108,14 +115,14 @@ namespace _07_StreamingContent_Console
                 "8.NR\n" +
                 "9.TV MA");
 
-                string maturityRatingString = Console.ReadLine();
+                string maturityRatingString = _console.ReadLine();
                 int maturityRatingId = int.Parse(maturityRatingString);
                 content.RatingOfMaturity = (MaturityRatingEnum)maturityRatingId;
 
                 
                 //Genre
-                Console.WriteLine("what is the genre:");
-                content.Genre = Console.ReadLine();
+                _console.WriteLine("what is the genre:");
+                content.Genre = _console.ReadLine();
 
                 _repo.AddContentToDirectory(content);
             }
@@ -124,7 +131,7 @@ namespace _07_StreamingContent_Console
             private void ShowAllContent()
             {
                 //Clean slate to start with
-                Console.Clear();
+                _console.Clear();
 
                 List<StreamingContent> listOfContent = _repo.GetContents();
                 
@@ -134,24 +141,24 @@ namespace _07_StreamingContent_Console
                     DisplayContent(content);
                 }
 
-                Console.WriteLine("Press any key to continue");
-                Console.ReadKey();
+                _console.WriteLine("Press any key to continue");
+                _console.ReadKey();
             }
 
             //Getting specific Content (By Title)
             private void ShowContentTitle()
             {
-                Console.Clear();
+                _console.Clear();
 
-                Console.WriteLine("What Title are you looking for?");
-                string title = Console.ReadLine();
+                _console.WriteLine("What Title are you looking for?");
+                string title = _console.ReadLine();
 
                 StreamingContent content = _repo.GetContentByTitle(title);
                 //Verify that content is in our repository
                 //Using helper method
                 DisplayContent(content);
-                Console.WriteLine("Press any key to continue");
-                Console.ReadKey();
+                _console.WriteLine("Press any key to continue");
+                _console.ReadKey();
 
         }
 
@@ -161,7 +168,7 @@ namespace _07_StreamingContent_Console
             //Helper Methods
             private void DisplayContent(StreamingContent content)
             {
-                Console.WriteLine(
+                _console.WriteLine(
                     $"Title: { content.Title}\n" +
                     $"Description:{content.Description}\n" +
                     $"RunTime: {content.RunTime}\n" +
